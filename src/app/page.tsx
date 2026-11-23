@@ -1,69 +1,11 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+  return <main>
+    <section className="hero"><div className="hero-copy"><div className="eyebrow"><span className="status-dot" /> INDEPENDENT APP STUDIO <span className="eyebrow-line" /> ANDROID FIRST</div><h1>Good ideas,<br /><em>in your pocket.</em></h1><p>We make thoughtful mobile apps for the little moments and big possibilities of everyday life.</p><div className="hero-actions"><Link className="button button-dark" href="/contact">Get in touch <span>↗</span></Link><a className="text-link" href="#about">Meet FadFad <span>↓</span></a></div><div className="hero-note"><span className="sparkle">✳</span><span>MADE WITH CURIOSITY<br /><strong>Built for real life.</strong></span></div></div><div className="hero-art" aria-label="Colorful abstract illustration of a mobile app"><div className="art-orbit orbit-one" /><div className="art-orbit orbit-two" /><div className="art-star star-one">✳</div><div className="art-star star-two">✦</div><div className="art-label">A LITTLE MORE<br />JOY, EVERY DAY <span>↗</span></div><div className="phone"><div className="phone-speaker" /><div className="phone-screen"><div className="screen-top"><span>9:41</span><span>● ● ●</span></div><div className="screen-icon">✳</div><div className="screen-title">A little<br />brighter<span>.</span></div><div className="screen-bottom"><span>MADE FOR YOU</span><span>↗</span></div></div></div><div className="art-caption">GOOD THINGS<br /><strong>ARE IN THE MAKING.</strong></div></div></section>
+    <div className="ticker"><span>THOUGHTFUL BY DESIGN</span><b>✳</b><span>MADE FOR ANDROID</span><b>✳</b><span>BUILT FOR EVERYDAY LIFE</span><b>✳</b><span>THOUGHTFUL BY DESIGN</span><b>✳</b><span>MADE FOR ANDROID</span></div>
+    <section className="about section-wrap" id="about"><div className="section-label"><span>01 / WHAT WE DO</span><span>✳</span></div><div className="about-content"><h2>Little apps.<br /><em>Lots of heart.</em></h2><div className="about-text"><p>At FadFad, we believe the best technology fits naturally into your day. We develop and publish Android apps with a simple goal: make useful things feel good to use.</p><Link href="/contact" className="arrow-link">A little more about us <span>↗</span></Link></div></div></section>
+    <section className="values section-wrap"><div className="section-label"><span>02 / OUR APPROACH</span><span>THE FADFAD WAY</span></div><div className="values-heading"><h2>Made with intention<span>.</span></h2><p>From the first idea to the final tap, we care about the details that make an experience better.</p></div><div className="value-grid"><article><div className="value-icon peach">✳</div><span className="value-number">01</span><h3>Simple, always.</h3><p>Clear, intuitive experiences that get out of your way and let you get on with your day.</p></article><article><div className="value-icon lilac">◒</div><span className="value-number">02</span><h3>Useful by nature.</h3><p>Ideas with a purpose, thoughtfully brought to life for the moments that matter.</p></article><article><div className="value-icon yellow">↗</div><span className="value-number">03</span><h3>Made to grow.</h3><p>We keep learning, refining, and finding new ways to make every experience better.</p></article></div></section>
+    <section className="cta section-wrap"><div className="cta-inner"><div><div className="eyebrow">HAVE SOMETHING IN MIND? <span>✳</span></div><h2>Let’s make<br /><em>something good.</em></h2><p>Questions, ideas, or just want to say hello? Our inbox is open.</p><Link href="/contact" className="button button-light">Start a conversation <span>↗</span></Link></div><div className="cta-art">✳</div></div></section>
+  </main>;
 }

@@ -1,0 +1,3 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = { title: "Contact" };
+export default function Contact() { return <main className="inner-page"><div className="inner-kicker">GET IN TOUCH <span>✳</span></div><h1>Let’s say <em>hello.</em></h1><p className="inner-intro">Have a question, an idea, or feedback about one of our apps? We’d love to hear from you.</p><div className="contact-card"><div><span>DROP US A LINE</span><h2>Our inbox is open.</h2><p>Send us a note and we’ll get back to you as soon as we can.</p></div><a href="mailto:office@fadfadcons.online">office@fadfadcons.online <span>↗</span></a></div></main>; }
